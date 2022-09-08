@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<title>Riccardiunix's Space</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<link rel="shortcut icon" href="../../favicon.ico">
+</head>
+<body>
+	<nav>
+		<a href="../../blog.html">Blog</a>
+		<a href="../../about.html">About</a>
+		<a href="../../index.html" id="left">Home</a>
+	</nav>
+	<main>
+		<h1>THINKPAD X230 LIBERO</h1>
+			<p>Il Thinkpad X230 è il mio PC principale, lo uso per la maggior parte delle mie attività.
+			Questo è stato modificato per essere il più prestate, duraturo e libero possibile tramite aggiramenti sia hardware che software.</p>
+		<h2>MOTIVI</h2>
+			<p>I motivi per cui ho scelto di usare un Thinkpad X230 del 2013 e non un portatile di ultima generazione sono:
+			<ul>
+				<li>è un Thinkpad</li>
+				<li>è incredibilmente portatile</li>
+				<li>ha un'ottima durata della batteria</li>
+				<li>è economico</li>
+				<li>è performante</li>
+				<li>è supporta BIOS open-source</li>
+				<li>è possibile "disabilitare" l'IME</li>
+				<li>è possibile aggiornare/modificare le sue parti</li>
+				<li>i pezzi di ricambio sono comuni e economici</li>
+			</ul></p>
+		<h2>HARDWARE</h2>
+			<h3>MODELLO</h3>
+				<p>Il mio è dotato di un i7-3520M con 2 core e 4 thread con una velocità turbo di 3.6 GHz e normale di 2.9 GHz. Questo modello è dotato della CPU stock più potente ma è anche il modello meno comune. Su ebay si può trovare sui 100/200 euro se si ha la pazienza di aspettare una buona occasione.</p>
+				<p>La CPU è saldata sulla scheda madre quindi non è possibile aggiornarla, tuttavia è possibile comprare delle schede madri modificate con una CPU aggiornata anche non stock che portano a migliori performance o minori consumi.</p>
+			<h3>RAM</h3>
+				<p>Anche la RAM è stata aggiornata con 2 stick DDRL3 da 8GB a 1866MHz.</p>
+				<p>DDRL3 è consigliata sui portatili che la supportano in quando consuma 1.35V contro i 1.5V della DDR3 portando a una riduzione del 20% dei consumi e quindi a una durata maggiore della batteria.</p>
+			<h3>BATTERIA</h3>
+				<p>Preso una nuova batteria da 9 celle che dura circa 6 ore con un utilizzo moderato, tra browsing online, programmazione e gaming causale con luminosità del display al massimo.</p>
+			<h3>DISSIPATORE</h3>
+				<p>Ho inoltre sostituito il dissipatore con il migliore disponibile per questo modello, che dalla mia ricerca sembra essere il AVC 04W6923.</p>
+				<p>Con questo ho notato temperature notevolmente più basse di quelle che avevo precedentemente e risulta anche molto più silenzioso quando sotto-sforzo</p>
+			<h3>WIFI</h3>
+				<p>È stata sostituita anche la scheda WiFi con una blob-free (che non richiede l'utilizzo di driver e blob proprietari).</p>
+				<p>Ho scelto la AR5BHB112 che ha una velocità massima di 450Mbs e utilizza 3 antenna. Tuttavia questo modello e full-size pcie e non siede bene nello slot half-size, sarebbe stato meglio usare AR5BHB112</p>
+				<p>L'X230 ne ha 4 a disposizione 2 per il modem 3G/4G e 2 per scheda WiFi, dato che non utilizzo il modem ho scelto per questa scheda, in caso si voglia utilizzare solo 2 antenne si può scegliere la AR5B22.</p>
+			<h3>SCHERMO</h3>
+				<p>Il mio modello è già dotato di uno schermo IPS, quindi non c'è necessità di aggiornarlo. Molti X230 tuttavia hanno schemi TN che presentano coloro meno vividi e angoli di visione inferiori in confronto a schermi IPS.</p> 
+		<h2>LIBERIAMOLO!</h2>
+			<h3>SISTEMA OPERATIVO</h3>
+				<p>Utilizzo Parabola GNU/Linux-libre che è una distribuzione GNU/Linux basata su Arch Linux ed è approvata dalla FSF.</p>
+			<h3>BIOS</h3>
+				<p>Dato che il X230 per via dell'IME (Intel Managment Engine) non può essere liberato del tutto con libreboot lo stesso sviluppatore ha creato il progetto parallelo osboot che permette a più hardware di avere un BIOS open sebbene non totalmente libero. Questo nuovo BIOS infatti include per quanto più possibile componenti FOSS ma dove necessario (per far funzionare l'hardware) anche componenti proprietari</p>
+				<p>Ho quindi sostituito il BIOS proprietario con osboot il quale permette anche di disabilitare (in parte) l'IME dato che questo è considerato da molto una backdoor che esegue un sistema operativo (fork di Minux) proprietario su una CPU a 16 bit ausiliaria.</p>
+				<p>In particolare le componenti proprietarie necessarie per il corretto funzionamento della macchina sono:
+				<ul>
+					<li>intel firmware descriptor</li>
+					<li>intel management engine</li>
+					<li>gigabit ethernet firmware (Intel 82579LM)</li>
+				</ul>
+				
+				</p>
+		<h2>COSTI</h2>
+			<table border=0 style="width:50%;text-align:center">
+				<tr>
+					<td><b>Atheros AR5BXB112 AR9380</b></td>
+					<td>20.02€</td>
+				</tr><tr>
+					<td><b>CPU Cooling Fan AVC-04W6923</b></td>
+					<td>23.54€</td>
+				</tr><tr>
+					<td><b>16GB DDR3L HX318LS11IBK2/16</b></td>
+					<td>60.99€</td>
+				</tr><tr>
+					<td><b>Lenovo Thinkpad X230 i7-3520M</b></td>
+					<td>133.25€</td>
+				</tr><tr>
+					<td><b>Batteria 6600mAh da 9 celle</b></td>
+					<td>55.58€</td>
+				</tr><tr>
+					<td><b>Totale</b></td>
+					<td>293.47€</td>
+				</tr>
+			</table>
+		<h2>CONCLUSIONI</h2>
+			<p>L'X230 sebbene non totalmente libero a causa delle componenti Intel è comunque una ottima macchina FOSS prestante e robusta.</p>
+			<p>Nonostante in prezzo finale di circa 300€ credo che per questa fascia di prezzo non potessi trovare una macchina migliore senza contare il fatto che l'ho potata creare come volevo</p>
+	</main>
+</body>
+</html>
