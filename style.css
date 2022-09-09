@@ -4,19 +4,12 @@ body{
  background-color:black;
  color:white;
 }
-
 html{min-height:100%;background-color:#141414;}
-
 a{text-decoration:none;color:#ff2b2b;}
-
 h1,h2,h3,h4{text-align:center;font-family:monospace;}
-
 h1{font-size:35px;}
-
 h2{font-size:30px;}
-
 h3{font-size:20px;}
-
 nav{
   overflow:hidden;
   background-color:#141414;
@@ -24,7 +17,6 @@ nav{
   position:-webkit-sticky;
   top:0;
 }
-
 nav a{
   float:right;
   display:block;
@@ -35,15 +27,11 @@ nav a{
   font-family:monospace;
   font-size:20px;
 }
-
 nav a#left{float:left;}
-
 nav a:hover{background-color:#ddd;color:black;}
-
 main{
   margin:auto;
   padding:20px;
   max-width:900px;
 }
-
 html{scroll-behavior: smooth;}
